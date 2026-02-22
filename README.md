@@ -1,5 +1,5 @@
 Project completed as part of my master’s degree coursework (Algorithms, Models and Concepts in Distributed Systems). 
-Consists of the Java implementation for the client of a given distributed system. 
+Consists of a Java implementation for the client of a given distributed system. 
 Implements features such as message broadcasting, NN atomic registry, failure detection, leader detection and uniform consensus.
 Used Protobuf library for message encoding/decoding and the log4j2 library for logging.<br>
 
@@ -20,8 +20,8 @@ java -jar .\target\amcds-client-1.1.jar 127.0.0.1 5000 127.0.0.1 5004 abc 1
 java -jar .\target\amcds-client-1.1.jar 127.0.0.1 5000 127.0.0.1 5005 abc 2
 java -jar .\target\amcds-client-1.1.jar 127.0.0.1 5000 127.0.0.1 5006 abc 3
 ```
-Or you can just download and run the pre-compiled .jars from the [releases](https://github.com/S4I-ID/amcds-project/releases/) 
-section. Or you can clone the project in your IDE of choice and start from there.
+Or you can just download and run the pre-compiled .jars from the [releases](https://github.com/S4I-ID/amcds-consensus/releases/) 
+section. Or you can clone the project in your IDE of choice and run the client from there.<br>
 4. Send commands in the server terminal ([see server specifications](#server-specifications))
 5. Read [FAQ](#faq--known-bugs)
 
