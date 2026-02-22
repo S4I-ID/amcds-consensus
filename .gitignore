@@ -1,0 +1,8 @@
+/.idea/*
+/target/**
+/src/main/java/client/protobuf/P.java
+/logs/*
+/*.log
+/*.exe
+/*.jar
+/*.xml

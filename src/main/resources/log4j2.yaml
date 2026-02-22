@@ -1,0 +1,18 @@
+Configuration:
+  Appenders:
+    Console:
+      name: "CONSOLE_APPENDER"
+      PatternLayout:
+        pattern: "%style{%d{HH:mm:ss.SSSS}}{bright_black} [%style{%pid{1}}{blue}] %highlight{%-5level}- %style{%c{1}}{cyan} - %msg%n"
+    File:
+      - name: "DEBUG_APPENDER"
+        fileName: "logs/debug.log"
+        PatternLayout:
+          pattern: "%d{HH:mm:ss.SSSS} %pid{1}-[%t|%tid] %-5level - %c{1} - %msg%n"
+  Loggers:
+    Root:
+      level: "DEBUG"
+      AppenderRef:
+        - ref: "CONSOLE_APPENDER"
+          level: "INFO"
+        - ref: "DEBUG_APPENDER"
